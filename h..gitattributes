@@ -1,0 +1,7 @@
+# Convierte automáticamente todos los archivos de texto a LF en el repositorio
+* text=auto
+
+# Configuración para archivos específicos
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf

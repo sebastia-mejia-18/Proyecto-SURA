@@ -1,0 +1,331 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-area .login-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Fondo oscuro */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*             LOGIN                    */
+
+
+
+/* Contenedor principal del formulario */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Formulario de login */
+.login-form {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Título */
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4caf50;
+}
+
+/* Estilo para cada grupo de campos */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.form-label {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Estilo para los inputs */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Focus en el input */
+.form-input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Botón de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+/* Efecto de sombra */
+.login-button:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de enlace de olvido de contraseña (opcional) */
+.text-center {
+    margin-top: 20px;
+}
+
+.text-center a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*           HOME              */
+
+
+
+
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+}
+
+/* Contenedor general */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+}
+
+/* Sección Hero */
+.hero {
+    background: url('/assets/hero-bg.jpg') no-repeat center center/cover;
+    padding: 150px 0; /* Aumentamos el padding para una mayor altura */
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+/* Sección de productos destacados */
+.featured-products {
+    background-color: #2d2d2d;
+    padding: 100px 0; /* Aumentamos el padding para dar más espacio a la sección */
+}
+
+.section-title {
+    font-size: 3rem; /* Hacemos más grande el título de la sección */
+    margin-bottom: 40px; /* Más espacio debajo del título */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Aumentamos el espacio entre las tarjetas */
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: #333;
+    border-radius: 10px; /* Aumentamos el radio de bordes para que sean más suaves */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 350px; /* Aumentamos el tamaño de las tarjetas */
+    margin: 0 auto; /* Centrado */
+    padding: 20px; /* Añadimos padding a las tarjetas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+.product-car{
+    background-color: #333;
+    border-radius: 10px; /* Aumentamos el radio de bordes para que sean más suaves */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 250px; /* Aumentamos el tamaño de las tarjetas */
+    margin: 0 auto; /* Centrado */
+    padding: 20px; /* Añadimos padding a las tarjetas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    
+
+}
+.product-car:hover {
+    transform: scale(1.05);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px; /* Aumentamos la altura de la imagen */
+    object-fit: cover;
+    border-radius: 5px; /* Bordes redondeados en las imágenes */
+}
+
+.product-title {
+    font-size: 1.5rem; /* Aumentamos el tamaño del título */
+    margin-top: 15px;
+    color: #f1f1f1;
+}
+
+.product-price {
+    font-size: 1.8rem; /* Aumentamos el tamaño del precio */
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.product-button {
+    padding: 12px 25px; /* Hacemos el botón más grande */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 40px 0; /* Aumentamos el padding para que el footer sea más grande */
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 1.1rem; /* Aumentamos el tamaño de fuente del footer */
+    margin: 0;
+}

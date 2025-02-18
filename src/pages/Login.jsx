@@ -100,8 +100,8 @@ const Login = () => {
 
                     {/* Enlace para registrarse */}
                     <div className="register-link-container text-center">
-                        <p className="register-prompt">
-                            ¿No tienes una cuenta?{" "}
+                    <p className="register-prompt" style={{ color: "white" }}>
+                    ¿No tienes una cuenta?{" "}
                             <Link to="/register" className="register-link">
                                 Regístrate aquí
                             </Link>

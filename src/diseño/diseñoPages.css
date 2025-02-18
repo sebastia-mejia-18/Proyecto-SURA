@@ -64,6 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(135deg, #6c6c6c, #3a3a3a, #6c6c6c);
 }
 
 /* Formulario de login */
@@ -234,87 +235,137 @@ body {
 
 /* Sección de productos destacados */
 .featured-products {
+    /* Fondo con un gradiente lineal en un ángulo de 135 grados, de gris oscuro a gris más claro */
     background: linear-gradient(135deg, #6c6c6c, #3a3a3a, #6c6c6c);
-    padding: 100px 0; /* Aumentamos el padding para dar más espacio a la sección */
+    /* Añadimos un padding en la parte superior e inferior para dar más espacio a la sección */
+    padding: 100px 0;
 }
 
+/* Estilo del título de la sección */
 .section-title {
-    font-size: 3rem; /* Hacemos más grande el título de la sección */
-    margin-bottom: 40px; /* Más espacio debajo del título */
+    /* Hacemos el tamaño de la fuente más grande */
+    font-size: 3rem;
+    /* Más espacio debajo del título */
+    margin-bottom: 40px;
 }
 
+/* Contenedor para la cuadrícula de productos */
 .products-grid {
+    /* Usamos grid para organizar los productos */
     display: grid;
+    /* Establecemos 3 columnas de igual tamaño */
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px; /* Aumentamos el espacio entre las tarjetas */
+    /* Definimos el espacio entre las tarjetas de los productos */
+    gap: 30px;
+    /* Añadimos espacio en la parte superior */
     margin-top: 30px;
 }
 
+/* Estilo de cada tarjeta de producto */
 .product-card {
+    /* Fondo oscuro para las tarjetas */
     background-color: #333;
-    border-radius: 10px; /* Aumentamos el radio de bordes para que sean más suaves */
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Evitamos que las imágenes o contenido se desborden */
     overflow: hidden;
+    /* Alineamos el texto al centro */
     text-align: center;
+    /* Transición de transformación para cuando pasa el ratón sobre la tarjeta */
     transition: transform 0.3s ease;
-    max-width: 350px; /* Aumentamos el tamaño de las tarjetas */
-    margin: 0 auto; /* Centrado */
-    padding: 20px; /* Añadimos padding a las tarjetas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    /* Máximo ancho de las tarjetas, haciéndolas más grandes */
+    max-width: 330px;
+    /* Centrado de las tarjetas en su contenedor */
+    margin: 0 auto;
+    /* Añadimos padding para separar el contenido de los bordes */
+    padding: 20px;
+    /* Sombra sutil para dar profundidad a la tarjeta */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.product-car{
-    background-color: #333;
-    border-radius: 10px; /* Aumentamos el radio de bordes para que sean más suaves */
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-    max-width: 250px; /* Aumentamos el tamaño de las tarjetas */
-    margin: 0 auto; /* Centrado */
-    padding: 20px; /* Añadimos padding a las tarjetas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
-    
 
+/* Estilo de la tarjeta alternativa (posiblemente un error de nombre "product-car" en lugar de "product-card") */
+.product-car {
+    /* Igual que la tarjeta de producto anterior, con algunas diferencias en el tamaño */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 250px; /* Tamaño más pequeño en comparación con la tarjeta principal */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Efecto de hover para la tarjeta alternativa */
 .product-car:hover {
+    /* Aumentamos ligeramente el tamaño cuando el ratón pasa sobre la tarjeta */
     transform: scale(1.05);
 }
 
+/* Efecto de hover para la tarjeta de producto principal */
 .product-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Escala la tarjeta al 105% cuando se pasa el ratón */
 }
 
+/* Estilo de la imagen del producto */
 .product-image {
+    /* La imagen ocupará el 100% del ancho de su contenedor */
     width: 100%;
-    height: 300px; /* Aumentamos la altura de la imagen */
+    /* Establecemos una altura fija para la imagen */
+    height: 400px;
+    /* Aseguramos que la imagen se recorte y ocupe toda el área de la caja */
     object-fit: cover;
-    border-radius: 5px; /* Bordes redondeados en las imágenes */
+    /* Bordes redondeados en la imagen */
+    border-radius: 5px;
 }
 
+/* Estilo del título del producto */
 .product-title {
-    font-size: 1.5rem; /* Aumentamos el tamaño del título */
+    /* Aumentamos el tamaño del texto */
+    font-size: 1.5rem;
+    /* Añadimos espacio arriba del título */
     margin-top: 15px;
-    color: #f1f1f1;
+    /* Establecemos un color oscuro para el título */
+    color: #000000;
 }
 
+/* Estilo del precio del producto */
 .product-price {
-    font-size: 1.8rem; /* Aumentamos el tamaño del precio */
+    /* Aumentamos el tamaño de la fuente del precio */
+    font-size: 1.8rem;
+    /* Añadimos espacio arriba y abajo */
     margin: 10px 0;
+    /* Usamos un color verde para resaltar el precio */
     color: #4CAF50;
 }
 
+/* Estilo del botón de compra */
 .product-button {
-    padding: 12px 25px; /* Hacemos el botón más grande */
+    /* Añadimos más padding al botón para hacerlo más grande */
+    padding: 12px 25px;
+    /* Color de fondo verde */
     background-color: #4CAF50;
+    /* Texto blanco */
     color: white;
+    /* Eliminamos el borde del botón */
     border: none;
+    /* Bordes redondeados */
     border-radius: 5px;
+    /* Tamaño de la fuente más grande */
     font-size: 1.2rem;
+    /* Cambiamos el cursor a mano al pasar el ratón */
     cursor: pointer;
+    /* Añadimos espacio en la parte inferior del botón */
     margin-bottom: 20px;
+    /* Transición para suavizar el cambio de color de fondo */
     transition: background-color 0.3s ease;
 }
 
+/* Efecto de hover sobre el botón */
 .product-button:hover {
-    background-color: #45a049;
+    /* Cambiamos el color de fondo cuando el ratón pasa por encima */
+    background-color: #585b58;
 }
 
 /* Footer */

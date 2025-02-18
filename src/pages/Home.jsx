@@ -13,7 +13,7 @@ const Home = () => {
                 {/* Sección de productos destacados */}
                 <section className="featured-products py-20">
                     <div className="container mx-auto text-center">
-                        <h2 className="section-title">Destacados</h2>
+                        <h2 className="section-title">Mas comprados</h2>
                         <div className="products-grid mt-8">
                             {/* Producto 1 */}
                             <div className="product-card">
@@ -24,7 +24,7 @@ const Home = () => {
                                 />
                                 <h3 className="product-title">Low Born x Raised</h3>
                                 <p className="product-price">$469.99</p>
-                                <Link to="/register">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
@@ -39,7 +39,7 @@ const Home = () => {
                                 />
                                 <h3 className="product-title">Low Court Purple</h3>
                                 <p className="product-price">$79.99</p>
-                                <Link to="/register">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
@@ -56,7 +56,7 @@ const Home = () => {
                                     Low Pro x Powerpuff Girls
                                 </h3>
                                 <p className="product-price">$2,999</p>
-                                <Link to="/register">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
@@ -73,7 +73,7 @@ const Home = () => {
                                     Travis Scott X SB Dunk Low Cactus Jack
                                 </h3>
                                 <p className="product-price">$1,299</p>
-                                <Link to="/register">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
@@ -90,7 +90,7 @@ const Home = () => {
                                     Dunk Low Sean Cliver Holiday
                                 </h3>
                                 <p className="product-price">$299.99</p>
-                                <Link to="/register">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
@@ -107,7 +107,7 @@ const Home = () => {
                                     Nike SB Dunk Low Pro Why So Sad
                                 </h3>
                                 <p className="product-price">$399</p>
-                                <Link to="/Registro">
+                                <Link to="/registro">
                                     <button className="product-button">
                                         Comprar Ahora
                                     </button>
